@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 
+:root {
+  --main-color: #047aed;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -37,7 +41,7 @@ img {
 }
 
 .navbar {
-  background-color: #047aed;
+  background-color: var(--main-color);
   color: white;
   height: 70px;
 }
@@ -75,4 +79,12 @@ img {
 
 .navbar a:hover {
   border-bottom: 2px solid #fff;
+}
+
+.showcase {
+  border: 2px solid black;
+  height: 400px;
+  background-color: var(--main-color);
+  color: white;
+  position: relative;
 }
