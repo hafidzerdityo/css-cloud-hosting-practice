@@ -167,3 +167,11 @@
 .p-5 {
   padding: 4rem;
 }
+
+.social {
+  justify-self: flex-end;
+}
+
+.footer .foot-logo {
+  justify-self: center;
+}
