@@ -244,6 +244,16 @@ img {
     grid-column: 1;
     grid-row: 1;
   }
+
+  .footer .grid div,
+  .footer .grid nav {
+    text-align: center;
+    justify-self: center;
+  }
+
+  .social {
+    margin-top: 15px;
+  }
 }
 
 @media (max-width: 500px) {
