@@ -212,9 +212,11 @@ img {
 }
 
 .features-head img,
-.features-sub-head img {
+.features-sub-head img,
+.docs-head img {
   width: 200px;
   justify-self: flex-end;
+  margin-right: 50px;
 }
 
 .footer .social a {
@@ -236,8 +238,29 @@ img {
   grid-column: 1 / span 2;
 }
 
+.docs-main h3 {
+  margin-bottom: 4px;
+}
+
 /* Tablet and under */
 @media (max-width: 768px) {
+  .navbar {
+    height: 110px;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar a:hover {
+    color: var(--dark-color);
+    border: none;
+  }
   .grid,
   .showcase .grid,
   .cli .grid,
@@ -274,25 +297,5 @@ img {
 
   .social {
     margin-top: 15px;
-  }
-}
-
-@media (max-width: 500px) {
-  .navbar {
-    height: 110px;
-  }
-
-  .navbar .flex {
-    flex-direction: column;
-  }
-
-  .navbar ul {
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-
-  .navbar a:hover {
-    color: var(--dark-color);
-    border: none;
   }
 }
