@@ -4,6 +4,8 @@
   --secondary-color: #1c3fa8;
   --dark-color: #002240;
   --light-color: #f4f4f4;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
 }
 
 * {
@@ -132,6 +134,10 @@ img {
   -ms-transform: skewY(-3deg);
 }
 
+.showcase-text {
+  animation: slideFromLeft 1s ease-in;
+}
+
 .showcase-form {
   position: relative;
   top: 60px;
@@ -140,10 +146,12 @@ img {
   padding: 40px;
   z-index: 100; /* Set to 100 so the form always in the front */
   justify-self: flex-end; /* Add this too push form to the right*/
+  animation: slideFromRight 1s ease-in;
 }
 
 .stats {
   padding-top: 100px;
+  animation: slideFromBottom 1s ease-in;
 }
 
 .grid-3 {
@@ -239,7 +247,71 @@ img {
 }
 
 .docs-main h3 {
-  margin-bottom: 4px;
+  margin: 20px 10px 0 0;
+}
+
+.docs-main .grid {
+  grid-template-columns: 1fr 2fr;
+  align-items: flex-start;
+}
+
+.docs-main nav li {
+  font-size: 17px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+.docs-main a:hover {
+  font-weight: bold;
+}
+
+code,
+pre {
+  background-color: #000;
+  color: #fff;
+  padding: 8px;
+}
+
+.social {
+  justify-self: flex-end;
+}
+
+/* Animation */
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slideFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* Tablet and under */
@@ -264,7 +336,9 @@ img {
   .grid,
   .showcase .grid,
   .cli .grid,
-  .cloud .grid {
+  .cloud .grid,
+  .features-main .grid,
+  .docs-main .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
@@ -277,11 +351,13 @@ img {
   .showcase-text {
     text-align: center;
     margin-top: 40px;
+    animation: slideFromTop 1s ease-in;
   }
 
   .showcase-form {
     justify-self: center;
     margin: auto;
+    animation: slideFromBottom 1s ease-in;
   }
 
   .cli .grid > *:first-child /*img */ {
@@ -297,5 +373,23 @@ img {
 
   .social {
     margin-top: 15px;
+  }
+
+  .features-head,
+  .features-sub-head,
+  .docs-head {
+    text-align: center;
+  }
+  .features-head img,
+  .features-sub-head img,
+  .docs-head img {
+    justify-self: center;
+    margin-right: 0;
+    /* cancel margin right from before */
+  }
+
+  .features-main .grid > *:first-child,
+  .features-main .grid > *:nth-child(2) {
+    grid-column: 1;
   }
 }
