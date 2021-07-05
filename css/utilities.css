@@ -1,8 +1,39 @@
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: var(--main-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+.bg-primary,
+.btn-primary {
+  background-color: var(--main-color);
+  color: #fff;
+}
+.bg-primary,
+.btn-primary {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.bg-dark,
+.btn-dark {
+  background-color: var(--dark-color);
+  color: #fff;
+}
+
+.bg-light,
+.btn-light {
+  background-color: var(--light-color);
+  color: #333;
+}
 .container {
-  max-width: 1100px; /* If screen goes larger than 1100px, the content will be still inside the 1200px */
-  margin: 0 auto; /* manual width with margin left and right auto so the all of the container content will be in center */
-  overflow: auto; /* try to comment this and all flex classes, h1 TOP MARGIN will showed up and this is here to fix it */
+  max-width: 1100px;
+  margin: 0 auto;
   padding: 0 30px;
+  overflow: auto;
 }
 
 .flex {
@@ -18,133 +49,46 @@
   gap: 20px;
   justify-content: center;
   align-items: center;
-  height: 100%; /* relative to .showcase height: 400px*/
+  height: 100%;
 }
 
 .card {
   background-color: #fff;
   color: #333;
   border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 3px 10px #333;
   padding: 20px;
   margin: 10px;
 }
 
-.btn {
-  display: inline-block; /* Inline but you can set the width and height */
-  padding: 10px 30px;
-  cursor: pointer;
-  background-color: var(--main-color);
-  color: white;
-  border: none;
-  border-radius: 5px;
-}
-
-.btn-outline {
-  background-color: transparent;
-  border: 1px solid #fff;
-}
-
-.btn {
-  transition: transform 0.2s ease-in;
-}
 .btn:hover {
   transform: scale(0.98);
 }
 
-/* background and colored buttons */
-
-.bg-primary,
-.btn-primary {
-  background-color: var(--main-color);
-  color: #fff;
-}
-
-.bg-secondary,
-.btn-secondary {
-  background-color: var(--secondary-color);
-  color: #fff;
-}
-.bg-dark,
-.btn-dark {
-  background-color: var(--dark-color);
-  color: #fff;
-}
-.bg-light,
-.btn-light {
-  background-color: var(--light-color);
-  color: #333;
-}
-
-.bg-primary a,
-.btn-primary a,
-.bg-secondary a,
-.btn-secondary a,
-.bg-dark a,
-.btn-dark a {
-  color: #fff;
-}
-
-/* text colors */
-.text-primary {
-  color: var(--main-color);
-}
-
-.text-secondary {
-  color: var(--secondary-color);
-}
-
-.text-dark {
-  color: var(--dark-color);
-}
-
-.text-light {
-  color: var(--light-color);
-}
-
-/* alert */
-
-.alert {
-  padding: 10px 20px;
-  font-weight: bold;
-  margin: 15px 0;
-}
-.alert i {
-  margin-right: 10px;
-}
-
-.alert-success {
-  background-color: var(--success-color);
-  color: #fff;
-}
-.alert-error {
-  background-color: var(--error-color);
-  color: #fff;
-}
-
-/* text sizes */
-.lead {
-  font-size: 20px;
-}
-
-.sm {
-  font-size: 1rem;
-}
-.md {
-  font-size: 2rem;
-}
-.lg {
-  font-size: 3rem;
-}
-.xl {
-  font-size: 4rem;
-}
-
-.text-center {
+.text-c {
   text-align: center;
 }
 
-/* margin and padding */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* text size */
+
+.lead {
+  font-size: 20px;
+}
+.xl {
+  font-size: 46px;
+}
+
+/* margin */
+
 .my-1 {
   margin: 1rem 0;
 }
@@ -152,43 +96,12 @@
 .my-2 {
   margin: 1.5rem 0;
 }
-
 .my-3 {
   margin: 2rem 0;
 }
+
 .my-4 {
   margin: 3rem 0;
-}
-
-.my-5 {
-  margin: 4rem 0;
-}
-
-.m-1 {
-  margin: 1rem;
-}
-
-.m-2 {
-  margin: 1.5rem;
-}
-
-.m-3 {
-  margin: 2rem;
-}
-.m-4 {
-  margin: 3rem;
-}
-
-.m-5 {
-  margin: 4rem;
-}
-
-.py-1 {
-  padding: 1rem 0;
-}
-
-.py-2 {
-  padding: 1.5rem 0;
 }
 
 .py-3 {
@@ -197,30 +110,6 @@
 .py-4 {
   padding: 3rem 0;
 }
-
 .py-5 {
   padding: 4rem 0;
-}
-
-.p-1 {
-  padding: 1rem;
-}
-
-.p-2 {
-  padding: 1.5rem;
-}
-
-.p-3 {
-  padding: 2rem;
-}
-.p-4 {
-  padding: 3rem;
-}
-
-.p-5 {
-  padding: 4rem;
-}
-
-.footer .foot-logo {
-  justify-self: center;
 }
