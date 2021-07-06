@@ -261,6 +261,12 @@ p {
   font-weight: bold;
 }
 
+.alert-error {
+  background-color: var(--error-color);
+  border-radius: 10px;
+  padding: 20px;
+}
+
 .docs-main h3 {
   margin-top: 7.5px;
 }
