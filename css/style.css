@@ -73,6 +73,10 @@ p {
   border-bottom: 2px solid #fff;
 }
 
+.active {
+  font-weight: bold;
+}
+
 .showcase {
   background-color: var(--main-color);
   height: 400px;
