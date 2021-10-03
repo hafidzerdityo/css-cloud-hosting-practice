@@ -5,4 +5,4 @@ Tech Stack Used:
 -HTML
 -CSS
 
-Site Deployment Link (Netlify) : https://loving-banach-42a54b.netlify.app/
+Site Deployment Link (Netlify) : https://hafidz-erdityo-cloud-hosting-project.netlify.app/
